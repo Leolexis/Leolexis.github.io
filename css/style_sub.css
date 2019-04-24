@@ -1,5 +1,5 @@
 body {
-    background: url(../img/au5ngbmdd7y11.jpg) no-repeat center top / cover;
+    background: url(../img/au5ngbmdd7y11.jpg) repeat center top / cover;
     padding: 0;
     margin: 0;
 }
@@ -9,6 +9,7 @@ body {
 }
 .container1 {
     width: 45%;
+    max-width: 650px;
     margin: 0 auto;
     
 }
@@ -35,12 +36,11 @@ nav {
     
 }
 .menu li{
-    float: left;
-    padding-top: 1px;
-    display: block;
-    margin-left: 5px;
-    font-size: 16px;
+    display: inline;
+    margin-left: 0.5%;
+    font-size: 90%;
     font-family: "Compacta";
+    padding-top: 1%;
 }
 .menu li a{
     color: black;
@@ -58,11 +58,11 @@ nav {
   /* Style the buttons that are used to open the tab content */
   .tab button {
     background-color: inherit;
-    float: center;
+    display: inline;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 5px;
+    padding: 1% 1%;
     transition: 0.3s;
     font-family: "Compacta";
   }
@@ -81,7 +81,7 @@ nav {
   /* Style the tab content */
   .tabcontent {
     display: none;
-    padding: 6px 12px;
+    padding: 1%;
     border: 1px solid #FCE300;
     border-top: none;
     background-image: url(../img/trenc1.png);
@@ -124,8 +124,10 @@ nav {
     font-size: 16px;
     font-family: "Compacta";
     padding: 2%;
-    
-}
+    }
+iframe {
+        width: 90%;
+    }
   /* Go from zero to full opacity */
   @keyframes fadeEffect {
     from {opacity: 0;}
