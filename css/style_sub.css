@@ -16,14 +16,26 @@ body {
 .title {
     background: url(../img/YELLOWTAPE-Menu.png) no-repeat center top;
     font-family: "Compacta";
-    font-size: 36px;
-    margin-bottom: 5px;
-    margin-top:5px;
+    font-size: 2em;
+    margin-bottom: 1%;
+    margin-top:1%;
     
 }
+header{
+    background: url(../img/YELLOWTAPE-Menu.png) no-repeat center top;
+    padding-top: 3px;
+    min-height: 70px;
+}
 nav {
+    width: 100%;
+    height: 100%;
+    margin: 1%;
+    display: block;
     text-align: center;
-    
+    padding: 0; 
+    border: 1px solid #191919;
+    border-top: none;
+    background: url(../img/background.png) no-repeat center top / cover;    
 }
 .menu { 
     margin: 1%;
@@ -35,14 +47,14 @@ nav {
     background: url(../img/background.png) no-repeat center top / cover;
     
 }
-.menu li{
+nav li{
     display: inline;
     margin-left: 0.5%;
-    font-size: 90%;
+    font-size: 1em;
     font-family: "Compacta";
     padding-top: 1%;
 }
-.menu li a{
+nav li a{
     color: black;
     text-decoration: none;
     text-transform: uppercase; 
@@ -123,11 +135,77 @@ nav {
     background: #fff247;
     font-size: 16px;
     font-family: "Compacta";
-    padding: 2%;
     }
 iframe {
         width: 90%;
+        height: 45%;
     }
+
+    .wrapper-with-intrinsic-ratio {
+        position: relative;
+        padding-bottom: 50%;
+        height: 0;
+    }
+    .element-to-stretch {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;	
+    }
+
+    header{
+        /*margin-top: 200px;*/
+        font-family: Compacta, sans-serif;
+       }
+       .dws-menu *{
+        margin: 0;
+        padding: 0;
+       }
+       .dws-menu ul,
+       .dws-menu ol{
+        list-style: none;
+       }
+       .dws-menu > ul{
+        display: flex;
+        justify-content: center;
+       }
+       .dws-menu > ul li{
+        position: relative;
+        border-right: 1px solid #FCE300;
+       }
+       .dws-menu > ul li:first-child{
+        border-left: 1px solid #FCE300;
+       }
+       .dws-menu > ul li:last-child{
+        border-right: 1px solid #FCE300;
+       }
+       .dws-menu > ul li > a i.fa{
+        position: absolute;
+        top: 15px;
+        left: 12px;
+        font-size: 18px;
+       }
+       .dws-menu > ul li a{
+        display: block;
+        background: #FCE300; 
+       
+        padding: 15px 30px 15px 40px;
+        font-size: 14px;
+        color: #000000;
+        text-decoration: none;
+        text-transform:uppercase;
+        transition: all 0.3s ease;
+       }
+       .dws-menu li a:hover{
+        background: #FCE300
+       
+        color: #ffffff;
+        box-shadow: 1px 5px 10px -5px black;
+        transition: all 0.3s ease;
+       }
+       
+       
   /* Go from zero to full opacity */
   @keyframes fadeEffect {
     from {opacity: 0;}
