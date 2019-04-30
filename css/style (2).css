@@ -17,13 +17,33 @@ nav{
 }
 .nav.tabs-cyan {
     background: url(../img/background.png) no-repeat center top / cover;
-    font-size: 0.9em;
+    font-size: 0.3em;
+    float: none;
 }
 .nav-link {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
 }
+  /* на sm */
+  @media (min-width: 480px) {
+    .nav.tabs-cyan {
+      font-size: 0.8em;
+    }
+  }
+  /* на md */
+  @media (min-width: 992px) {
+    .nav.tabs-cyan {
+      font-size: 0.8em;
+    }
+  }
+  /* на lg */
+  @media (min-width: 1200px) {
+    .nav.tabs-cyan {
+      font-size: 0.8em;
+    }
+  }
+
 .nav-link:hover {
     color: rgb(82, 82, 0);
 }
