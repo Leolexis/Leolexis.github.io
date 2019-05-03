@@ -1,5 +1,6 @@
 body {
-    background: url(../img/au5ngbmdd7y11.jpg) repeat center top / cover;
+    background: url(../img/dema1.png) no-repeat center / cover;
+    background-attachment: fixed;
     padding: 0;
     margin: 0;
 }
@@ -15,10 +16,12 @@ nav{
 .container {
     width: 80%;
 }
+.nav-item {
+    padding: 5px;
+}
 .nav.tabs-cyan {
     background: url(../img/background.png) no-repeat center top / cover;
-    font-size: 0.3em;
-    float: none;
+    font-size: 0.5em;
 }
 .nav-link {
     color: black;
