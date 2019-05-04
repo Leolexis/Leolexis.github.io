@@ -65,9 +65,27 @@ nav li a{
     text-transform: uppercase; 
 }
 ul {
-    list-style-type:none;
-    text-justify: center;
+  text-align: center;
+  list-style: none;
+  padding-right: 15%;
 }
+/* на sm */
+@media (min-width: 480px) {
+    ul {
+      padding-right: 10%;
+    }
+  }
+  /* на md */
+  @media (min-width: 992px) {
+    ul {
+      padding-right: 5%;
+    }
+  }
+  /* на lg */
+  @media (min-width: 1200px) {
+    ul {
+    }
+  }
 .tab {
     overflow: hidden;
     border: none;
@@ -75,8 +93,6 @@ ul {
     font-family: "Compacta";
     font-size: 0.5em;
   }
- 
-      }
     /* на sm */
     @media (min-width: 480px) {
         .tab {
@@ -105,7 +121,7 @@ ul {
     padding: 1% 1%;
     transition: 0.3s;
     font-family: "Compacta";
-    width: 2.3%;
+    width: 2.5%;
   }
 
   /* Change background color of buttons on hover */
