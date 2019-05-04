@@ -1,8 +1,13 @@
 body {
-    background: url(../img/background.png) no-repeat center / cover;
+    background: url(../img/background-min.png) no-repeat center / cover;
     background-attachment: fixed;
     padding: 0;
     margin: 0;
+}
+@media (max-width: 768px) {
+    body {
+        height:100vh;
+    }
 }
 header {
     max-height: 840px;
