@@ -1,7 +1,17 @@
 body {
-    background: url(../img/au5ngbmdd7y11.jpg) repeat center top / cover;
+    background: url(../img/dema1-min.png) no-repeat center / cover;
+    background-attachment: fixed;
     padding: 0;
     margin: 0;
+}
+
+html, body{
+    height: 100%;
+    font-family: Compacta;
+    font-size: 16px;
+}
+nav{
+    background: url(../img/background-min.png) no-repeat center top / cover;
 }
 .container {
     width: 80%;
@@ -16,36 +26,31 @@ body {
 .title {
     background: url(../img/YELLOWTAPE-Menu.png) no-repeat center top;
     font-family: "Compacta";
-    font-size: 2em;
+    font-size: 1em;
     margin-bottom: 1%;
     margin-top:1%;
-    
+    padding: 1% 1%;
 }
-header{
-    background: url(../img/YELLOWTAPE-Menu.png) no-repeat center top;
-    padding-top: 3px;
-    min-height: 70px;
-}
-nav {
-    width: 100%;
-    height: 100%;
-    margin: 1%;
-    display: block;
-    text-align: center;
-    padding: 0; 
-    border: 1px solid #191919;
-    border-top: none;
-    background: url(../img/background.png) no-repeat center top / cover;    
-}
-.menu { 
-    margin: 1%;
-    display: block;
-    text-align: center;
-    padding: 5%; 
-    border: 1px solid #191919;
-    border-top: none;
-    background: url(../img/background.png) no-repeat center top / cover;
-    
+   /* на sm */
+   @media (min-width: 480px) {
+        
+    .title {
+      font-size: 1.5em;
+  }
+        }
+        /* на md */
+        @media (min-width: 992px) {
+          
+            .title {
+      font-size: 2em;
+  }
+        }
+        /* на lg */
+        @media (min-width: 1200px) {
+          
+            .title {
+      font-size: 2em;
+  }
 }
 nav li{
     display: inline;
@@ -59,14 +64,37 @@ nav li a{
     text-decoration: none;
     text-transform: uppercase; 
 }
-
+ul {
+    list-style-type:none;
+    text-justify: center;
+}
 .tab {
     overflow: hidden;
     border: none;
     background: url(../img/background.png) no-repeat center top / cover;
     font-family: "Compacta";
+    font-size: 0.5em;
   }
-  
+ 
+      }
+    /* на sm */
+    @media (min-width: 480px) {
+        .tab {
+          font-size: 0.8em;
+        }
+      }
+      /* на md */
+      @media (min-width: 992px) {
+        .tab {
+          font-size: 0.8em;
+        }
+      }
+      /* на lg */
+      @media (min-width: 1200px) {
+        .tab {
+          font-size: 0.8em;
+        }
+      }
   /* Style the buttons that are used to open the tab content */
   .tab button {
     background-color: inherit;
@@ -77,6 +105,7 @@ nav li a{
     padding: 1% 1%;
     transition: 0.3s;
     font-family: "Compacta";
+    width: 2.3%;
   }
 
   /* Change background color of buttons on hover */
@@ -108,34 +137,29 @@ nav li a{
     text-decoration: none;
     text-transform: uppercase; 
     font-family: "Compacta";
+    font-size: 0.5em;
   }
-
-/* скрываем чекбоксы и блоки с содержанием */
-.hide, .hide + label ~ div {
-    display: none; 
-}
-/* вид текста label */
-.hide + label,
-.hide:checked + label {
-    padding: 0;
-    color: #FCE300;
-    cursor: pointer;
-    text-decoration: none;
-    text-transform: uppercase; 
-    font-family: "Compacta";
-}
-/* вид текста label при активном переключателе */
-.hide:checked + label {
-    color: red;
-    border-bottom: 0;
-}
-/* когда чекбокс активен показываем блоки с содержанием  */
-.hide:checked + label + div {
-    display: block; 
-    background: #fff247;
-    font-size: 16px;
-    font-family: "Compacta";
-    }
+   /* на sm */
+   @media (min-width: 480px) {
+        
+    .articles li a {
+      font-size: 0.7em;
+  }
+        }
+        /* на md */
+        @media (min-width: 992px) {
+          
+    .articles li a {
+      font-size: 1em;
+  }
+        }
+        /* на lg */
+        @media (min-width: 1200px) {
+          
+    .articles li a {
+      font-size: 1em;
+  }
+        }
 iframe {
         width: 90%;
         height: 45%;
