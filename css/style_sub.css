@@ -121,9 +121,26 @@ ul {
     padding: 1% 1%;
     transition: 0.3s;
     font-family: "Compacta";
-    width: 2.5%;
+    width: 4.5%;
   }
-
+ /* на sm */
+ @media (min-width: 480px) {
+    .tab button {
+    width: 2.5%;
+    }
+  }
+  /* на md */
+  @media (min-width: 992px) {
+    .tab button {
+        width: 2.5%;
+    }
+  }
+  /* на lg */
+  @media (min-width: 1200px) {
+    .tab button {
+        width: 2.5%;
+    }
+  }
   /* Change background color of buttons on hover */
   .tab button:hover {
     background-color: transparent;
