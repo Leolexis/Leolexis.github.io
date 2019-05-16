@@ -27,30 +27,11 @@ nav{
   font-size: 0.5em;
   padding-left: 15%;
 }
-/* на sm */
-@media (min-width: 480px) {
-  .nav.tabs-cyan {
-    font-size: 0.8em;    
-    padding-left: 11.5%;
-  }
-}
-/* на md */
-@media (min-width: 992px) {
-  .nav.tabs-cyan {
-    font-size: 0.8em;    
-    padding-left: 6%;
-  }
-}
-/* на lg */
-@media (min-width: 1200px) {
-  .nav.tabs-cyan {
-    font-size: 0.8em;    
-  padding-left: 5.5%;
-  }
-}
-
 .nav-link:hover {
   color: rgb(82, 82, 0);
+}
+.tab-content {
+  background-color: 191919;
 }
 span{
   padding-top: 8px;
@@ -67,8 +48,9 @@ span{
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 5px 2px 5px 10px;
+  padding: 1%;
   transition: 0.3s;
+  font-size: 0.7em;
 }
 
 /* Change background color of buttons on hover */
@@ -117,80 +99,75 @@ span{
     text-decoration: none;
         text-transform: uppercase;
 }
-   /* на sm */
-   @media (min-width: 480px) {
-        
-    .title {
-      font-size: 1.5em;
-  }
-        }
-        /* на md */
-        @media (min-width: 992px) {
-          
-            .title {
-      font-size: 2em;
-  }
-        }
-        /* на lg */
-        @media (min-width: 1200px) {
-          
-            .title {
-      font-size: 2em;
-  }
-}
-
 ul {
   text-align: center;
   list-style: none;
   padding-right: 15%;
+}
+.articles li a{
+  display: block;
+  color: #FCE300;
+  text-decoration: none;
+  text-transform: uppercase; 
+  font-family: "Compacta";
+  font-size: 0.5em;
 }
 /* на sm */
 @media (min-width: 480px) {
     ul {
       padding-right: 10%;
     }
+    .title {
+      font-size: 1.5em;
+  }
+  .articles li a {
+    font-size: 0.7em;
+}
+.nav.tabs-cyan {
+  font-size: 0.8em;    
+  padding-left: 11.5%;
+}
+.tab button {
+  font-size: 0.7em;
+}
   }
   /* на md */
   @media (min-width: 992px) {
     ul {
       padding-right: 5%;
     }
+    .title {
+      font-size: 2em;
+  }
+  .articles li a {
+    font-size: 1em;
+}
+.nav.tabs-cyan {
+  font-size: 0.8em;    
+  padding-left: 6%;
+}
+.tab button {
+  font-size: 0.7em;
+}
   }
   /* на lg */
   @media (min-width: 1200px) {
     ul {
     }
+    .title {
+      font-size: 2em;
   }
-
-  .articles li a{
-    display: block;
-    color: #FCE300;
-    text-decoration: none;
-    text-transform: uppercase; 
-    font-family: "Compacta";
-    font-size: 0.5em;
+  .articles li a {
+    font-size: 1em;
+}
+.nav.tabs-cyan {
+  font-size: 0.8em;    
+padding-left: 5.5%;
+}
+.tab button {
+  font-size: 1em;
+}
   }
-   /* на sm */
-   @media (min-width: 480px) {
-        
-    .articles li a {
-      font-size: 0.7em;
-  }
-        }
-        /* на md */
-        @media (min-width: 992px) {
-          
-    .articles li a {
-      font-size: 1em;
-  }
-        }
-        /* на lg */
-        @media (min-width: 1200px) {
-          
-    .articles li a {
-      font-size: 1em;
-  }
-        }
 iframe {
         width: 90%;
         height: 45%;
